@@ -24,6 +24,7 @@ class HrEmployee(models.Model):
             print(n.x_experience)
             print(n.x_keyword)
             print(n.x_skills)
+            print("test")
         '''for job in jobs:
             # Récupérer les noms des skills
             if job.x_skills:
