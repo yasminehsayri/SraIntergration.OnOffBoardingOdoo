@@ -1,0 +1,14 @@
+
+Installation Directory: C:\Program Files\Odoo 16.0.20250212\PostgreSQL
+Server Installation Directory: C:\Program Files\Odoo 16.0.20250212\PostgreSQL
+Data Directory: C:\Program Files\Odoo 16.0.20250212\PostgreSQL\data
+Database Port: 5432
+Database Superuser: openpg
+Operating System Account: openpgsvc
+Database Service: PostgreSQL_For_Odoo
+Command Line Tools Installation Directory: C:\Program Files\Odoo 16.0.20250212\PostgreSQL
+pgAdmin4 Installation Directory: C:\Program Files\Odoo 16.0.20250212\PostgreSQL\pgAdmin 4
+Stack Builder Installation Directory: C:\Program Files\Odoo 16.0.20250212\PostgreSQL\stackbuilder
+
+===== Installation completed at: 2025-02-12(YYYY-MM-DD) - 10:32:16(HH:MM:SS) =====
+                            

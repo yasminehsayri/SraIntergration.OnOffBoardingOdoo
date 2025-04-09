@@ -1,0 +1,34 @@
+2025-02-12 08:32:04.807 GMT [24084] LOG:  database system was shut down at 2025-02-12 08:31:52 GMT
+2025-02-12 08:32:04.831 GMT [10412] LOG:  database system is ready to accept connections
+2025-02-12 08:47:09.246 GMT [19324] ERROR:  canceling statement due to lock timeout
+2025-02-12 08:47:09.246 GMT [19324] STATEMENT:  ALTER TABLE "hr_job" ADD COLUMN "alias_id" int4 
+2025-02-12 10:52:52.477 GMT [17440] ERROR:  update or delete on table "ir_ui_view" violates foreign key constraint "ir_ui_view_inherit_id_fkey" on table "ir_ui_view"
+2025-02-12 10:52:52.477 GMT [17440] DETAIL:  Key (id)=(1109) is still referenced from table "ir_ui_view".
+2025-02-12 10:52:52.477 GMT [17440] STATEMENT:  DELETE FROM "ir_ui_view" WHERE id IN (1183, 1177, 1173, 1147, 1140, 1138, 1136, 1134, 1131, 1129, 1126, 1127, 1122, 1118, 1119, 1120, 1113, 1114, 1169, 1157, 1149, 1109, 1167, 1103)
+2025-02-12 10:52:52.562 GMT [17440] ERROR:  update or delete on table "ir_ui_view" violates foreign key constraint "ir_ui_view_inherit_id_fkey" on table "ir_ui_view"
+2025-02-12 10:52:52.562 GMT [17440] DETAIL:  Key (id)=(1109) is still referenced from table "ir_ui_view".
+2025-02-12 10:52:52.562 GMT [17440] STATEMENT:  DELETE FROM "ir_ui_view" WHERE id IN (1140, 1138, 1136, 1134, 1131, 1129, 1126, 1127, 1122, 1118, 1119, 1120, 1113, 1114, 1109, 1103)
+2025-02-12 10:52:52.609 GMT [17440] ERROR:  update or delete on table "ir_ui_view" violates foreign key constraint "ir_ui_view_inherit_id_fkey" on table "ir_ui_view"
+2025-02-12 10:52:52.609 GMT [17440] DETAIL:  Key (id)=(1109) is still referenced from table "ir_ui_view".
+2025-02-12 10:52:52.609 GMT [17440] STATEMENT:  DELETE FROM "ir_ui_view" WHERE id IN (1122, 1118, 1119, 1120, 1113, 1114, 1109, 1103)
+2025-02-12 10:52:52.638 GMT [17440] ERROR:  update or delete on table "ir_ui_view" violates foreign key constraint "ir_ui_view_inherit_id_fkey" on table "ir_ui_view"
+2025-02-12 10:52:52.638 GMT [17440] DETAIL:  Key (id)=(1109) is still referenced from table "ir_ui_view".
+2025-02-12 10:52:52.638 GMT [17440] STATEMENT:  DELETE FROM "ir_ui_view" WHERE id IN (1109, 1103)
+2025-02-12 12:31:56.951 GMT [4272] ERROR:  could not serialize access due to concurrent update
+2025-02-12 12:31:56.951 GMT [4272] STATEMENT:  
+	            SELECT *, cron_name->>'en_US' as cron_name
+	            FROM ir_cron
+	            WHERE active = true
+	              AND numbercall != 0
+	              AND (nextcall <= (now() at time zone 'UTC')
+	                OR EXISTS (
+	                    SELECT cron_id
+	                    FROM ir_cron_trigger
+	                    WHERE call_at <= (now() at time zone 'UTC')
+	                      AND cron_id = ir_cron.id
+	                )
+	              )
+	              AND id in (11)
+	            ORDER BY priority
+	            LIMIT 1 FOR NO KEY UPDATE SKIP LOCKED
+	        

@@ -1,0 +1,249 @@
+2025-03-24 09:23:08.726 GMT [7100] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-03-24 09:32:23.043 GMT [29232] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-03-24 09:32:23.043 GMT [15092] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-03-24 09:32:23.044 GMT [10416] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-03-24 09:34:21.362 GMT [9044] ERROR:  null value in column "job_id" violates not-null constraint
+2025-03-24 09:34:21.362 GMT [9044] DETAIL:  Failing row contains (1, null, 1, 1, 4, null, 2025-03-24 09:34:21.300995, 2025-03-24 09:34:21.300995, 2025-03-24, Non spécifié).
+2025-03-24 09:34:21.362 GMT [9044] STATEMENT:  INSERT INTO "hr_candidate_cv" ("application_date", "create_date", "create_uid", "departement", "job_id", "name", "write_date", "write_uid") VALUES ('2025-03-24', '2025-03-24 09:34:21.300995', 1, 'Non spécifié', NULL, 4, '2025-03-24 09:34:21.300995', 1) RETURNING "id"
+2025-03-24 10:13:11.339 GMT [28880] ERROR:  canceling statement due to lock timeout
+2025-03-24 10:13:11.339 GMT [28880] STATEMENT:  ALTER TABLE "hr_candidate_cv" ALTER COLUMN "job_id" DROP NOT NULL
+2025-03-24 10:13:29.146 GMT [28880] ERROR:  canceling statement due to lock timeout
+2025-03-24 10:13:29.146 GMT [28880] STATEMENT:  ALTER TABLE "hr_candidate_cv" ALTER COLUMN "job_id" DROP NOT NULL
+2025-03-24 10:27:04.022 GMT [3600] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-03-24 10:27:04.022 GMT [3600] LOG:  unexpected EOF on client connection with an open transaction
+2025-03-24 11:07:24.337 GMT [22940] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 11:07:24.337 GMT [22940] DETAIL:  Failing row contains (551, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 11:07:23.501876, 2025-03-24 11:07:23.501876).
+2025-03-24 11:07:24.337 GMT [22940] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "model_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 11:07:23.501876', 1, 1, DEFAULT, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 11:07:23.501876', 1), (true, '2025-03-24 11:07:23.501876', 1, NULL, 519, 'hr_candidate_cv', true, true, true, true, '2025-03-24 11:07:23.501876', 1) RETURNING "id"
+2025-03-24 11:07:24.340 GMT [22940] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 11:07:24.340 GMT [22940] DETAIL:  Failing row contains (552, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 11:07:23.501876, 2025-03-24 11:07:23.501876).
+2025-03-24 11:07:24.340 GMT [22940] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 11:07:23.501876', 1, 1, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 11:07:23.501876', 1) RETURNING "id"
+2025-03-24 11:13:51.653 GMT [25228] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 11:13:51.653 GMT [25228] DETAIL:  Failing row contains (554, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 11:13:50.811824, 2025-03-24 11:13:50.811824).
+2025-03-24 11:13:51.653 GMT [25228] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "model_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 11:13:50.811824', 1, 1, DEFAULT, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 11:13:50.811824', 1), (true, '2025-03-24 11:13:50.811824', 1, NULL, 519, 'hr_candidate_cv', true, true, true, true, '2025-03-24 11:13:50.811824', 1) RETURNING "id"
+2025-03-24 11:13:51.655 GMT [25228] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 11:13:51.655 GMT [25228] DETAIL:  Failing row contains (555, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 11:13:50.811824, 2025-03-24 11:13:50.811824).
+2025-03-24 11:13:51.655 GMT [25228] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 11:13:50.811824', 1, 1, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 11:13:50.811824', 1) RETURNING "id"
+2025-03-24 11:15:24.220 GMT [29352] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 11:15:24.220 GMT [29352] DETAIL:  Failing row contains (557, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 11:15:23.395166, 2025-03-24 11:15:23.395166).
+2025-03-24 11:15:24.220 GMT [29352] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "model_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 11:15:23.395166', 1, 1, DEFAULT, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 11:15:23.395166', 1), (true, '2025-03-24 11:15:23.395166', 1, DEFAULT, 519, 'hr_candidate_cv', true, true, DEFAULT, true, '2025-03-24 11:15:23.395166', 1) RETURNING "id"
+2025-03-24 11:15:24.223 GMT [29352] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 11:15:24.223 GMT [29352] DETAIL:  Failing row contains (558, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 11:15:23.395166, 2025-03-24 11:15:23.395166).
+2025-03-24 11:15:24.223 GMT [29352] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 11:15:23.395166', 1, 1, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 11:15:23.395166', 1) RETURNING "id"
+2025-03-24 11:16:43.474 GMT [4776] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 11:16:43.474 GMT [4776] DETAIL:  Failing row contains (560, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 11:16:42.822707, 2025-03-24 11:16:42.822707).
+2025-03-24 11:16:43.474 GMT [4776] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "model_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 11:16:42.822707', 1, 1, DEFAULT, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 11:16:42.822707', 1), (true, '2025-03-24 11:16:42.822707', 1, DEFAULT, 519, 'hr_candidate_cv', true, true, DEFAULT, true, '2025-03-24 11:16:42.822707', 1) RETURNING "id"
+2025-03-24 11:16:43.477 GMT [4776] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 11:16:43.477 GMT [4776] DETAIL:  Failing row contains (561, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 11:16:42.822707, 2025-03-24 11:16:42.822707).
+2025-03-24 11:16:43.477 GMT [4776] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 11:16:42.822707', 1, 1, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 11:16:42.822707', 1) RETURNING "id"
+2025-03-24 11:16:58.063 GMT [29408] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 11:16:58.063 GMT [29408] DETAIL:  Failing row contains (563, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 11:16:57.415247, 2025-03-24 11:16:57.415247).
+2025-03-24 11:16:58.063 GMT [29408] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "model_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 11:16:57.415247', 1, 1, DEFAULT, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 11:16:57.415247', 1), (true, '2025-03-24 11:16:57.415247', 1, DEFAULT, 519, 'hr_candidate_cv', true, true, DEFAULT, true, '2025-03-24 11:16:57.415247', 1) RETURNING "id"
+2025-03-24 11:16:58.066 GMT [29408] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 11:16:58.066 GMT [29408] DETAIL:  Failing row contains (564, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 11:16:57.415247, 2025-03-24 11:16:57.415247).
+2025-03-24 11:16:58.066 GMT [29408] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 11:16:57.415247', 1, 1, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 11:16:57.415247', 1) RETURNING "id"
+2025-03-24 11:17:14.313 GMT [10696] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 11:17:14.313 GMT [10696] DETAIL:  Failing row contains (566, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 11:17:13.669758, 2025-03-24 11:17:13.669758).
+2025-03-24 11:17:14.313 GMT [10696] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "model_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 11:17:13.669758', 1, 1, DEFAULT, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 11:17:13.669758', 1), (true, '2025-03-24 11:17:13.669758', 1, DEFAULT, 519, 'hr_candidate_cv', true, true, DEFAULT, true, '2025-03-24 11:17:13.669758', 1) RETURNING "id"
+2025-03-24 11:17:14.316 GMT [10696] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 11:17:14.316 GMT [10696] DETAIL:  Failing row contains (567, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 11:17:13.669758, 2025-03-24 11:17:13.669758).
+2025-03-24 11:17:14.316 GMT [10696] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 11:17:13.669758', 1, 1, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 11:17:13.669758', 1) RETURNING "id"
+2025-03-24 11:17:47.589 GMT [25080] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 11:17:47.589 GMT [25080] DETAIL:  Failing row contains (569, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 11:17:46.963739, 2025-03-24 11:17:46.963739).
+2025-03-24 11:17:47.589 GMT [25080] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "model_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 11:17:46.963739', 1, 1, DEFAULT, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 11:17:46.963739', 1), (true, '2025-03-24 11:17:46.963739', 1, DEFAULT, 519, 'hr_candidate_cv', true, true, DEFAULT, true, '2025-03-24 11:17:46.963739', 1) RETURNING "id"
+2025-03-24 11:17:47.592 GMT [25080] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 11:17:47.592 GMT [25080] DETAIL:  Failing row contains (570, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 11:17:46.963739, 2025-03-24 11:17:46.963739).
+2025-03-24 11:17:47.592 GMT [25080] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 11:17:46.963739', 1, 1, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 11:17:46.963739', 1) RETURNING "id"
+2025-03-24 11:19:43.497 GMT [23612] ERROR:  canceling statement due to lock timeout
+2025-03-24 11:19:43.497 GMT [23612] STATEMENT:  ALTER TABLE "hr_applicant" DROP COLUMN "cv_id" CASCADE
+2025-03-24 11:20:39.614 GMT [16768] ERROR:  canceling statement due to lock timeout
+2025-03-24 11:20:39.614 GMT [16768] STATEMENT:  ALTER TABLE "hr_applicant" DROP COLUMN "cv_id" CASCADE
+2025-03-24 11:21:12.434 GMT [16768] ERROR:  canceling statement due to lock timeout
+2025-03-24 11:21:12.434 GMT [16768] STATEMENT:  ALTER TABLE "hr_applicant" DROP COLUMN "cv_id" CASCADE
+2025-03-24 11:21:27.780 GMT [16768] ERROR:  canceling statement due to lock timeout
+2025-03-24 11:21:27.780 GMT [16768] STATEMENT:  ALTER TABLE "hr_applicant" DROP COLUMN "cv_id" CASCADE
+2025-03-24 11:22:45.877 GMT [16768] ERROR:  canceling statement due to lock timeout
+2025-03-24 11:22:45.877 GMT [16768] STATEMENT:  ALTER TABLE "hr_applicant" DROP COLUMN "cv_id" CASCADE
+2025-03-24 11:25:11.792 GMT [19248] ERROR:  canceling statement due to lock timeout
+2025-03-24 11:25:11.792 GMT [19248] STATEMENT:  ALTER TABLE "hr_applicant" DROP COLUMN "cv_id" CASCADE
+2025-03-24 11:35:57.883 GMT [24492] ERROR:  canceling statement due to lock timeout
+2025-03-24 11:35:57.883 GMT [24492] STATEMENT:  ALTER TABLE "hr_applicant" DROP COLUMN "cv_id" CASCADE
+2025-03-24 11:37:30.211 GMT [27824] ERROR:  canceling statement due to lock timeout
+2025-03-24 11:37:30.211 GMT [27824] STATEMENT:  ALTER TABLE "hr_applicant" DROP COLUMN "cv_id" CASCADE
+2025-03-24 11:49:14.878 GMT [28392] ERROR:  canceling statement due to lock timeout
+2025-03-24 11:49:14.878 GMT [28392] STATEMENT:  ALTER TABLE "hr_applicant" DROP COLUMN "cv_id" CASCADE
+2025-03-24 11:50:41.762 GMT [27708] ERROR:  canceling statement due to lock timeout
+2025-03-24 11:50:41.762 GMT [27708] STATEMENT:  ALTER TABLE "hr_applicant" DROP COLUMN "cv_id" CASCADE
+2025-03-24 11:56:37.016 GMT [24208] ERROR:  canceling statement due to lock timeout
+2025-03-24 11:56:37.016 GMT [24208] STATEMENT:  ALTER TABLE "hr_applicant" DROP COLUMN "cv_id" CASCADE
+2025-03-24 11:57:57.891 GMT [28368] ERROR:  canceling statement due to lock timeout
+2025-03-24 11:57:57.891 GMT [28368] STATEMENT:  ALTER TABLE "hr_applicant" DROP COLUMN "cv_id" CASCADE
+2025-03-24 11:58:28.997 GMT [492] ERROR:  canceling statement due to lock timeout
+2025-03-24 11:58:28.997 GMT [492] STATEMENT:  ALTER TABLE "hr_candidate_cv" ADD COLUMN "matching_score" double precision 
+2025-03-24 12:01:50.289 GMT [24272] ERROR:  canceling statement due to lock timeout
+2025-03-24 12:01:50.289 GMT [24272] STATEMENT:  ALTER TABLE "hr_applicant" DROP COLUMN "cv_id" CASCADE
+2025-03-24 12:02:39.099 GMT [25736] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 12:02:39.099 GMT [25736] DETAIL:  Failing row contains (572, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 12:02:38.44242, 2025-03-24 12:02:38.44242).
+2025-03-24 12:02:39.099 GMT [25736] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "model_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 12:02:38.442420', 1, 1, DEFAULT, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 12:02:38.442420', 1), (true, '2025-03-24 12:02:38.442420', 1, 1, 519, 'hr_candidate_cv', true, true, true, true, '2025-03-24 12:02:38.442420', 1) RETURNING "id"
+2025-03-24 12:02:39.102 GMT [25736] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 12:02:39.102 GMT [25736] DETAIL:  Failing row contains (573, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 12:02:38.44242, 2025-03-24 12:02:38.44242).
+2025-03-24 12:02:39.102 GMT [25736] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 12:02:38.442420', 1, 1, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 12:02:38.442420', 1) RETURNING "id"
+2025-03-24 12:04:02.376 GMT [27824] ERROR:  canceling statement due to lock timeout
+2025-03-24 12:04:02.376 GMT [27824] STATEMENT:  ALTER TABLE "hr_candidate_cv" ADD COLUMN "extracted_text" text 
+2025-03-24 12:04:48.769 GMT [13620] ERROR:  canceling statement due to lock timeout
+2025-03-24 12:04:48.769 GMT [13620] STATEMENT:  ALTER TABLE "hr_candidate_cv" ADD COLUMN "extracted_text" text 
+2025-03-24 12:05:04.923 GMT [10496] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 12:05:04.923 GMT [10496] DETAIL:  Failing row contains (575, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 12:05:04.28614, 2025-03-24 12:05:04.28614).
+2025-03-24 12:05:04.923 GMT [10496] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "model_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 12:05:04.286140', 1, 1, DEFAULT, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 12:05:04.286140', 1), (true, '2025-03-24 12:05:04.286140', 1, 1, 519, 'hr_candidate_cv', true, true, true, true, '2025-03-24 12:05:04.286140', 1) RETURNING "id"
+2025-03-24 12:05:04.926 GMT [10496] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 12:05:04.926 GMT [10496] DETAIL:  Failing row contains (576, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 12:05:04.28614, 2025-03-24 12:05:04.28614).
+2025-03-24 12:05:04.926 GMT [10496] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 12:05:04.286140', 1, 1, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 12:05:04.286140', 1) RETURNING "id"
+2025-03-24 12:05:59.645 GMT [24328] ERROR:  canceling statement due to lock timeout
+2025-03-24 12:05:59.645 GMT [24328] STATEMENT:  ALTER TABLE "hr_candidate_cv" ALTER COLUMN "name" DROP NOT NULL
+2025-03-24 12:07:50.824 GMT [27552] ERROR:  canceling statement due to lock timeout
+2025-03-24 12:07:50.824 GMT [27552] STATEMENT:  ALTER TABLE "hr_candidate_cv" ALTER COLUMN "name" DROP NOT NULL
+2025-03-24 12:12:05.283 GMT [3128] FATAL:  password authentication failed for user "openpg"
+2025-03-24 12:12:05.283 GMT [3128] DETAIL:  Password does not match for user "openpg".
+	Connection matched pg_hba.conf line 86: "host    all             all             ::1/128                 md5"
+2025-03-24 12:12:17.166 GMT [15416] FATAL:  password authentication failed for user "openpg"
+2025-03-24 12:12:17.166 GMT [15416] DETAIL:  Password does not match for user "openpg".
+	Connection matched pg_hba.conf line 86: "host    all             all             ::1/128                 md5"
+2025-03-24 12:12:24.146 GMT [11808] FATAL:  password authentication failed for user "openpg"
+2025-03-24 12:12:24.146 GMT [11808] DETAIL:  Password does not match for user "openpg".
+	Connection matched pg_hba.conf line 86: "host    all             all             ::1/128                 md5"
+2025-03-24 12:16:18.957 GMT [3160] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-03-24 12:16:18.958 GMT [3160] LOG:  unexpected EOF on client connection with an open transaction
+2025-03-24 12:17:10.435 GMT [21996] ERROR:  foreign key constraint "hr_candidate_cv_name_fkey" cannot be implemented
+2025-03-24 12:17:10.435 GMT [21996] DETAIL:  Key columns "name" and "id" are of incompatible types: character varying and integer.
+2025-03-24 12:17:10.435 GMT [21996] STATEMENT:  
+	        ALTER TABLE "hr_candidate_cv"
+	        ALTER COLUMN "name" DROP DEFAULT,
+	        ALTER COLUMN "name" TYPE VARCHAR USING "name"::VARCHAR
+	    
+2025-03-24 21:07:45.884 GMT [14812] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 21:07:45.884 GMT [14812] DETAIL:  Failing row contains (578, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 21:07:45.222817, 2025-03-24 21:07:45.222817).
+2025-03-24 21:07:45.884 GMT [14812] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "model_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 21:07:45.222817', 1, 1, DEFAULT, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 21:07:45.222817', 1), (true, '2025-03-24 21:07:45.222817', 1, 1, 519, 'hr_candidate_cv', true, true, true, true, '2025-03-24 21:07:45.222817', 1) RETURNING "id"
+2025-03-24 21:07:45.889 GMT [14812] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 21:07:45.889 GMT [14812] DETAIL:  Failing row contains (579, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 21:07:45.222817, 2025-03-24 21:07:45.222817).
+2025-03-24 21:07:45.889 GMT [14812] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 21:07:45.222817', 1, 1, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 21:07:45.222817', 1) RETURNING "id"
+2025-03-24 21:07:46.137 GMT [14812] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 21:07:46.137 GMT [14812] DETAIL:  Failing row contains (581, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 21:07:45.997279, 2025-03-24 21:07:45.997279).
+2025-03-24 21:07:46.137 GMT [14812] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "model_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 21:07:45.997279', 1, 1, DEFAULT, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 21:07:45.997279', 1), (true, '2025-03-24 21:07:45.997279', 1, 1, 519, 'hr_candidate_cv', true, true, true, true, '2025-03-24 21:07:45.997279', 1) RETURNING "id"
+2025-03-24 21:07:46.142 GMT [14812] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 21:07:46.142 GMT [14812] DETAIL:  Failing row contains (582, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 21:07:45.997279, 2025-03-24 21:07:45.997279).
+2025-03-24 21:07:46.142 GMT [14812] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 21:07:45.997279', 1, 1, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 21:07:45.997279', 1) RETURNING "id"
+2025-03-24 21:11:52.845 GMT [8232] ERROR:  foreign key constraint "hr_candidate_cv_name_fkey" cannot be implemented
+2025-03-24 21:11:52.845 GMT [8232] DETAIL:  Key columns "name" and "id" are of incompatible types: character varying and integer.
+2025-03-24 21:11:52.845 GMT [8232] STATEMENT:  
+	        ALTER TABLE "hr_candidate_cv"
+	        ALTER COLUMN "name" DROP DEFAULT,
+	        ALTER COLUMN "name" TYPE VARCHAR USING "name"::VARCHAR
+	    
+2025-03-24 21:11:56.605 GMT [8232] ERROR:  foreign key constraint "hr_candidate_cv_name_fkey" cannot be implemented
+2025-03-24 21:11:56.605 GMT [8232] DETAIL:  Key columns "name" and "id" are of incompatible types: character varying and integer.
+2025-03-24 21:11:56.605 GMT [8232] STATEMENT:  
+	        ALTER TABLE "hr_candidate_cv"
+	        ALTER COLUMN "name" DROP DEFAULT,
+	        ALTER COLUMN "name" TYPE VARCHAR USING "name"::VARCHAR
+	    
+2025-03-24 21:13:02.239 GMT [25908] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 21:13:02.239 GMT [25908] DETAIL:  Failing row contains (584, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 21:13:01.520248, 2025-03-24 21:13:01.520248).
+2025-03-24 21:13:02.239 GMT [25908] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "model_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 21:13:01.520248', 1, 1, DEFAULT, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 21:13:01.520248', 1), (true, '2025-03-24 21:13:01.520248', 1, 1, 519, 'hr_candidate_cv', true, true, true, true, '2025-03-24 21:13:01.520248', 1) RETURNING "id"
+2025-03-24 21:13:02.242 GMT [25908] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 21:13:02.242 GMT [25908] DETAIL:  Failing row contains (585, null, 1, 1, 1, onboarding_offboarding.onboarding_offboarding, t, t, t, t, t, 2025-03-24 21:13:01.520248, 2025-03-24 21:13:01.520248).
+2025-03-24 21:13:02.242 GMT [25908] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 21:13:01.520248', 1, 1, 'onboarding_offboarding.onboarding_offboarding', true, true, true, true, '2025-03-24 21:13:01.520248', 1) RETURNING "id"
+2025-03-24 21:15:44.836 GMT [12144] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 21:15:44.836 GMT [12144] DETAIL:  Failing row contains (587, null, 1, 1, 1, onboarding_offboarding, t, t, t, t, t, 2025-03-24 21:15:44.224022, 2025-03-24 21:15:44.224022).
+2025-03-24 21:15:44.836 GMT [12144] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "model_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 21:15:44.224022', 1, 1, DEFAULT, 'onboarding_offboarding', true, true, true, true, '2025-03-24 21:15:44.224022', 1), (true, '2025-03-24 21:15:44.224022', 1, 1, 519, 'hr.candidate.cv', true, true, true, true, '2025-03-24 21:15:44.224022', 1) RETURNING "id"
+2025-03-24 21:15:44.839 GMT [12144] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-24 21:15:44.839 GMT [12144] DETAIL:  Failing row contains (588, null, 1, 1, 1, onboarding_offboarding, t, t, t, t, t, 2025-03-24 21:15:44.224022, 2025-03-24 21:15:44.224022).
+2025-03-24 21:15:44.839 GMT [12144] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-24 21:15:44.224022', 1, 1, 'onboarding_offboarding', true, true, true, true, '2025-03-24 21:15:44.224022', 1) RETURNING "id"
+2025-03-25 08:09:22.585 GMT [11452] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-25 08:09:22.585 GMT [11452] DETAIL:  Failing row contains (590, null, 1, 1, 1, onboarding_offboarding, t, t, t, t, t, 2025-03-25 08:09:21.76776, 2025-03-25 08:09:21.76776).
+2025-03-25 08:09:22.585 GMT [11452] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "model_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-25 08:09:21.767760', 1, 1, DEFAULT, 'onboarding_offboarding', true, true, true, true, '2025-03-25 08:09:21.767760', 1), (true, '2025-03-25 08:09:21.767760', 1, 1, 519, 'hr.candidate.cv', true, true, true, true, '2025-03-25 08:09:21.767760', 1) RETURNING "id"
+2025-03-25 08:09:22.590 GMT [11452] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-25 08:09:22.590 GMT [11452] DETAIL:  Failing row contains (591, null, 1, 1, 1, onboarding_offboarding, t, t, t, t, t, 2025-03-25 08:09:21.76776, 2025-03-25 08:09:21.76776).
+2025-03-25 08:09:22.590 GMT [11452] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-25 08:09:21.767760', 1, 1, 'onboarding_offboarding', true, true, true, true, '2025-03-25 08:09:21.767760', 1) RETURNING "id"
+2025-03-25 08:09:22.812 GMT [11452] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-25 08:09:22.812 GMT [11452] DETAIL:  Failing row contains (593, null, 1, 1, 1, onboarding_offboarding, t, t, t, t, t, 2025-03-25 08:09:22.672836, 2025-03-25 08:09:22.672836).
+2025-03-25 08:09:22.812 GMT [11452] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "model_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-25 08:09:22.672836', 1, 1, DEFAULT, 'onboarding_offboarding', true, true, true, true, '2025-03-25 08:09:22.672836', 1), (true, '2025-03-25 08:09:22.672836', 1, 1, 519, 'hr.candidate.cv', true, true, true, true, '2025-03-25 08:09:22.672836', 1) RETURNING "id"
+2025-03-25 08:09:22.816 GMT [11452] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-25 08:09:22.816 GMT [11452] DETAIL:  Failing row contains (594, null, 1, 1, 1, onboarding_offboarding, t, t, t, t, t, 2025-03-25 08:09:22.672836, 2025-03-25 08:09:22.672836).
+2025-03-25 08:09:22.816 GMT [11452] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-25 08:09:22.672836', 1, 1, 'onboarding_offboarding', true, true, true, true, '2025-03-25 08:09:22.672836', 1) RETURNING "id"
+2025-03-25 08:09:23.176 GMT [11452] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-25 08:09:23.176 GMT [11452] DETAIL:  Failing row contains (596, null, 1, 1, 1, onboarding_offboarding, t, t, t, t, t, 2025-03-25 08:09:22.990364, 2025-03-25 08:09:22.990364).
+2025-03-25 08:09:23.176 GMT [11452] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "model_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-25 08:09:22.990364', 1, 1, DEFAULT, 'onboarding_offboarding', true, true, true, true, '2025-03-25 08:09:22.990364', 1), (true, '2025-03-25 08:09:22.990364', 1, 1, 519, 'hr.candidate.cv', true, true, true, true, '2025-03-25 08:09:22.990364', 1) RETURNING "id"
+2025-03-25 08:09:23.179 GMT [11452] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-25 08:09:23.179 GMT [11452] DETAIL:  Failing row contains (597, null, 1, 1, 1, onboarding_offboarding, t, t, t, t, t, 2025-03-25 08:09:22.990364, 2025-03-25 08:09:22.990364).
+2025-03-25 08:09:23.179 GMT [11452] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-25 08:09:22.990364', 1, 1, 'onboarding_offboarding', true, true, true, true, '2025-03-25 08:09:22.990364', 1) RETURNING "id"
+2025-03-25 08:20:46.541 GMT [26212] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-25 08:20:46.541 GMT [26212] DETAIL:  Failing row contains (599, null, 1, 1, 1, onboarding_offboarding, t, t, t, t, t, 2025-03-25 08:20:45.9187, 2025-03-25 08:20:45.9187).
+2025-03-25 08:20:46.541 GMT [26212] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "model_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-25 08:20:45.918700', 1, 1, DEFAULT, 'onboarding_offboarding', true, true, true, true, '2025-03-25 08:20:45.918700', 1), (true, '2025-03-25 08:20:45.918700', 1, 1, 519, 'hr.candidate.cv', true, true, true, true, '2025-03-25 08:20:45.918700', 1) RETURNING "id"
+2025-03-25 08:20:46.544 GMT [26212] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-25 08:20:46.544 GMT [26212] DETAIL:  Failing row contains (600, null, 1, 1, 1, onboarding_offboarding, t, t, t, t, t, 2025-03-25 08:20:45.9187, 2025-03-25 08:20:45.9187).
+2025-03-25 08:20:46.544 GMT [26212] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-25 08:20:45.918700', 1, 1, 'onboarding_offboarding', true, true, true, true, '2025-03-25 08:20:45.918700', 1) RETURNING "id"
+2025-03-25 08:20:46.755 GMT [26212] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-25 08:20:46.755 GMT [26212] DETAIL:  Failing row contains (602, null, 1, 1, 1, onboarding_offboarding, t, t, t, t, t, 2025-03-25 08:20:46.626761, 2025-03-25 08:20:46.626761).
+2025-03-25 08:20:46.755 GMT [26212] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "model_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-25 08:20:46.626761', 1, 1, DEFAULT, 'onboarding_offboarding', true, true, true, true, '2025-03-25 08:20:46.626761', 1), (true, '2025-03-25 08:20:46.626761', 1, 1, 519, 'hr.candidate.cv', true, true, true, true, '2025-03-25 08:20:46.626761', 1) RETURNING "id"
+2025-03-25 08:20:46.759 GMT [26212] ERROR:  null value in column "model_id" violates not-null constraint
+2025-03-25 08:20:46.759 GMT [26212] DETAIL:  Failing row contains (603, null, 1, 1, 1, onboarding_offboarding, t, t, t, t, t, 2025-03-25 08:20:46.626761, 2025-03-25 08:20:46.626761).
+2025-03-25 08:20:46.759 GMT [26212] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-03-25 08:20:46.626761', 1, 1, 'onboarding_offboarding', true, true, true, true, '2025-03-25 08:20:46.626761', 1) RETURNING "id"
+2025-03-25 08:31:52.351 GMT [6068] ERROR:  insert or update on table "hr_candidate_cv" violates foreign key constraint "hr_candidate_cv_name_fkey"
+2025-03-25 08:31:52.351 GMT [6068] DETAIL:  Key (name)=(5) is not present in table "hr_applicant".
+2025-03-25 08:31:52.351 GMT [6068] STATEMENT:  ALTER TABLE "hr_candidate_cv" ADD FOREIGN KEY ("name") REFERENCES "hr_applicant"("id") ON DELETE cascade
+2025-03-25 08:31:52.656 GMT [6068] ERROR:  insert or update on table "hr_candidate_cv" violates foreign key constraint "hr_candidate_cv_name_fkey"
+2025-03-25 08:31:52.656 GMT [6068] DETAIL:  Key (name)=(5) is not present in table "hr_applicant".
+2025-03-25 08:31:52.656 GMT [6068] STATEMENT:  ALTER TABLE "hr_candidate_cv" ADD FOREIGN KEY ("name") REFERENCES "hr_applicant"("id") ON DELETE cascade
+2025-03-25 08:36:54.786 GMT [24676] ERROR:  insert or update on table "hr_candidate_cv" violates foreign key constraint "hr_candidate_cv_name_fkey"
+2025-03-25 08:36:54.786 GMT [24676] DETAIL:  Key (name)=(5) is not present in table "hr_applicant".
+2025-03-25 08:36:54.786 GMT [24676] STATEMENT:  ALTER TABLE "hr_candidate_cv" ADD FOREIGN KEY ("name") REFERENCES "hr_applicant"("id") ON DELETE cascade
+2025-03-25 08:36:55.110 GMT [24676] ERROR:  insert or update on table "hr_candidate_cv" violates foreign key constraint "hr_candidate_cv_name_fkey"
+2025-03-25 08:36:55.110 GMT [24676] DETAIL:  Key (name)=(5) is not present in table "hr_applicant".
+2025-03-25 08:36:55.110 GMT [24676] STATEMENT:  ALTER TABLE "hr_candidate_cv" ADD FOREIGN KEY ("name") REFERENCES "hr_applicant"("id") ON DELETE cascade
+2025-03-25 08:37:16.548 GMT [21892] ERROR:  insert or update on table "hr_candidate_cv" violates foreign key constraint "hr_candidate_cv_name_fkey"
+2025-03-25 08:37:16.548 GMT [21892] DETAIL:  Key (name)=(5) is not present in table "hr_applicant".
+2025-03-25 08:37:16.548 GMT [21892] STATEMENT:  ALTER TABLE "hr_candidate_cv" ADD FOREIGN KEY ("name") REFERENCES "hr_applicant"("id") ON DELETE cascade
+2025-03-25 08:37:16.853 GMT [21892] ERROR:  insert or update on table "hr_candidate_cv" violates foreign key constraint "hr_candidate_cv_name_fkey"
+2025-03-25 08:37:16.853 GMT [21892] DETAIL:  Key (name)=(5) is not present in table "hr_applicant".
+2025-03-25 08:37:16.853 GMT [21892] STATEMENT:  ALTER TABLE "hr_candidate_cv" ADD FOREIGN KEY ("name") REFERENCES "hr_applicant"("id") ON DELETE cascade
+2025-03-25 08:39:28.138 GMT [28344] ERROR:  insert or update on table "hr_candidate_cv" violates foreign key constraint "hr_candidate_cv_name_fkey"
+2025-03-25 08:39:28.138 GMT [28344] DETAIL:  Key (name)=(5) is not present in table "hr_applicant".
+2025-03-25 08:39:28.138 GMT [28344] STATEMENT:  ALTER TABLE "hr_candidate_cv" ADD FOREIGN KEY ("name") REFERENCES "hr_applicant"("id") ON DELETE cascade
+2025-03-25 08:39:28.445 GMT [28344] ERROR:  insert or update on table "hr_candidate_cv" violates foreign key constraint "hr_candidate_cv_name_fkey"
+2025-03-25 08:39:28.445 GMT [28344] DETAIL:  Key (name)=(5) is not present in table "hr_applicant".
+2025-03-25 08:39:28.445 GMT [28344] STATEMENT:  ALTER TABLE "hr_candidate_cv" ADD FOREIGN KEY ("name") REFERENCES "hr_applicant"("id") ON DELETE cascade
+2025-03-25 08:39:47.817 GMT [28344] ERROR:  insert or update on table "hr_candidate_cv" violates foreign key constraint "hr_candidate_cv_name_fkey"
+2025-03-25 08:39:47.817 GMT [28344] DETAIL:  Key (name)=(5) is not present in table "hr_applicant".
+2025-03-25 08:39:47.817 GMT [28344] STATEMENT:  ALTER TABLE "hr_candidate_cv" ADD FOREIGN KEY ("name") REFERENCES "hr_applicant"("id") ON DELETE cascade
+2025-03-25 08:39:48.133 GMT [28344] ERROR:  insert or update on table "hr_candidate_cv" violates foreign key constraint "hr_candidate_cv_name_fkey"
+2025-03-25 08:39:48.133 GMT [28344] DETAIL:  Key (name)=(5) is not present in table "hr_applicant".
+2025-03-25 08:39:48.133 GMT [28344] STATEMENT:  ALTER TABLE "hr_candidate_cv" ADD FOREIGN KEY ("name") REFERENCES "hr_applicant"("id") ON DELETE cascade
+2025-03-25 08:53:14.154 GMT [18300] FATAL:  password authentication failed for user "openpg"
+2025-03-25 08:53:14.154 GMT [18300] DETAIL:  Password does not match for user "openpg".
+	Connection matched pg_hba.conf line 86: "host    all             all             ::1/128                 md5"
+2025-03-25 08:56:20.614 GMT [4368] FATAL:  password authentication failed for user "openpg"
+2025-03-25 08:56:20.614 GMT [4368] DETAIL:  Password does not match for user "openpg".
+	Connection matched pg_hba.conf line 86: "host    all             all             ::1/128                 md5"
+2025-03-25 08:56:25.083 GMT [29608] FATAL:  password authentication failed for user "openpg"
+2025-03-25 08:56:25.083 GMT [29608] DETAIL:  Password does not match for user "openpg".
+	Connection matched pg_hba.conf line 86: "host    all             all             ::1/128                 md5"
+2025-03-25 11:30:26.557 GMT [12748] ERROR:  insert or update on table "hr_candidate_cv" violates foreign key constraint "hr_candidate_cv_name_fkey"
+2025-03-25 11:30:26.557 GMT [12748] DETAIL:  Key (name)=(5) is not present in table "hr_applicant".
+2025-03-25 11:30:26.557 GMT [12748] STATEMENT:  ALTER TABLE "hr_candidate_cv" ADD FOREIGN KEY ("name") REFERENCES "hr_applicant"("id") ON DELETE cascade
+2025-03-25 11:30:27.004 GMT [12748] ERROR:  insert or update on table "hr_candidate_cv" violates foreign key constraint "hr_candidate_cv_name_fkey"
+2025-03-25 11:30:27.004 GMT [12748] DETAIL:  Key (name)=(5) is not present in table "hr_applicant".
+2025-03-25 11:30:27.004 GMT [12748] STATEMENT:  ALTER TABLE "hr_candidate_cv" ADD FOREIGN KEY ("name") REFERENCES "hr_applicant"("id") ON DELETE cascade
+2025-03-25 11:31:40.483 GMT [29852] ERROR:  insert or update on table "hr_candidate_cv" violates foreign key constraint "hr_candidate_cv_name_fkey"
+2025-03-25 11:31:40.483 GMT [29852] DETAIL:  Key (name)=(5) is not present in table "hr_applicant".
+2025-03-25 11:31:40.483 GMT [29852] STATEMENT:  ALTER TABLE "hr_candidate_cv" ADD FOREIGN KEY ("name") REFERENCES "hr_applicant"("id") ON DELETE set null
+2025-03-25 11:31:40.784 GMT [29852] ERROR:  insert or update on table "hr_candidate_cv" violates foreign key constraint "hr_candidate_cv_name_fkey"
+2025-03-25 11:31:40.784 GMT [29852] DETAIL:  Key (name)=(5) is not present in table "hr_applicant".
+2025-03-25 11:31:40.784 GMT [29852] STATEMENT:  ALTER TABLE "hr_candidate_cv" ADD FOREIGN KEY ("name") REFERENCES "hr_applicant"("id") ON DELETE set null
+2025-03-25 11:32:43.645 GMT [29852] ERROR:  insert or update on table "hr_candidate_cv" violates foreign key constraint "hr_candidate_cv_name_fkey"
+2025-03-25 11:32:43.645 GMT [29852] DETAIL:  Key (name)=(5) is not present in table "hr_applicant".
+2025-03-25 11:32:43.645 GMT [29852] STATEMENT:  ALTER TABLE "hr_candidate_cv" ADD FOREIGN KEY ("name") REFERENCES "hr_applicant"("id") ON DELETE set null

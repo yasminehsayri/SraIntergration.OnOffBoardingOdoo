@@ -1,0 +1,36 @@
+2025-03-13 10:03:28.240 GMT [50948] ERROR:  column "x_keyword" contains null values
+2025-03-13 10:03:28.240 GMT [50948] STATEMENT:  ALTER TABLE "hr_job" ALTER COLUMN "x_keyword" SET NOT NULL
+2025-03-13 10:58:34.508 GMT [50948] ERROR:  column "x_keyword" contains null values
+2025-03-13 10:58:34.508 GMT [50948] STATEMENT:  ALTER TABLE "hr_job" ALTER COLUMN "x_keyword" SET NOT NULL
+2025-03-13 10:58:34.509 GMT [50948] ERROR:  column "x_Competences" contains null values
+2025-03-13 10:58:34.509 GMT [50948] STATEMENT:  ALTER TABLE "hr_job" ALTER COLUMN "x_Competences" SET NOT NULL
+2025-03-13 10:59:27.306 GMT [56244] ERROR:  column "x_experience" contains null values
+2025-03-13 10:59:27.306 GMT [56244] STATEMENT:  ALTER TABLE "hr_job" ALTER COLUMN "x_experience" SET NOT NULL
+2025-03-13 10:59:27.308 GMT [56244] ERROR:  column "x_keyword" contains null values
+2025-03-13 10:59:27.308 GMT [56244] STATEMENT:  ALTER TABLE "hr_job" ALTER COLUMN "x_keyword" SET NOT NULL
+2025-03-13 10:59:27.310 GMT [56244] ERROR:  column "x_Competences" contains null values
+2025-03-13 10:59:27.310 GMT [56244] STATEMENT:  ALTER TABLE "hr_job" ALTER COLUMN "x_Competences" SET NOT NULL
+2025-03-13 11:00:58.848 GMT [42352] ERROR:  column "x_experience" contains null values
+2025-03-13 11:00:58.848 GMT [42352] STATEMENT:  ALTER TABLE "hr_job" ALTER COLUMN "x_experience" SET NOT NULL
+2025-03-13 11:00:58.849 GMT [42352] ERROR:  column "x_keyword" contains null values
+2025-03-13 11:00:58.849 GMT [42352] STATEMENT:  ALTER TABLE "hr_job" ALTER COLUMN "x_keyword" SET NOT NULL
+2025-03-13 11:00:58.850 GMT [42352] ERROR:  column "x_competences" contains null values
+2025-03-13 11:00:58.850 GMT [42352] STATEMENT:  ALTER TABLE "hr_job" ALTER COLUMN "x_competences" SET NOT NULL
+2025-03-13 13:11:19.673 GMT [56244] ERROR:  could not serialize access due to concurrent update
+2025-03-13 13:11:19.673 GMT [56244] STATEMENT:  
+	            SELECT *, cron_name->>'en_US' as cron_name
+	            FROM ir_cron
+	            WHERE active = true
+	              AND numbercall != 0
+	              AND (nextcall <= (now() at time zone 'UTC')
+	                OR EXISTS (
+	                    SELECT cron_id
+	                    FROM ir_cron_trigger
+	                    WHERE call_at <= (now() at time zone 'UTC')
+	                      AND cron_id = ir_cron.id
+	                )
+	              )
+	              AND id in (6)
+	            ORDER BY priority
+	            LIMIT 1 FOR NO KEY UPDATE SKIP LOCKED
+	        

@@ -1,0 +1,32 @@
+2025-03-06 11:45:53.602 GMT [16380] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-03-06 11:45:53.602 GMT [42984] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-03-06 11:46:47.504 GMT [43416] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-03-08 21:31:20.913 GMT [30344] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-03-08 21:32:40.260 GMT [39360] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-03-08 21:46:24.073 GMT [41136] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-03-09 12:22:31.382 GMT [48860] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-03-09 23:42:47.666 GMT [42864] ERROR:  could not serialize access due to concurrent update
+2025-03-09 23:42:47.666 GMT [42864] STATEMENT:  
+	            SELECT *, cron_name->>'en_US' as cron_name
+	            FROM ir_cron
+	            WHERE active = true
+	              AND numbercall != 0
+	              AND (nextcall <= (now() at time zone 'UTC')
+	                OR EXISTS (
+	                    SELECT cron_id
+	                    FROM ir_cron_trigger
+	                    WHERE call_at <= (now() at time zone 'UTC')
+	                      AND cron_id = ir_cron.id
+	                )
+	              )
+	              AND id in (2)
+	            ORDER BY priority
+	            LIMIT 1 FOR NO KEY UPDATE SKIP LOCKED
+	        

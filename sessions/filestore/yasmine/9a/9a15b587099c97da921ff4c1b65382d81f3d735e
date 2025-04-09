@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//PYVOBJECT//NONSGML Version 1//EN
+BEGIN:VEVENT
+UID:20250212T084453Z - 86620@Yasmine
+DTSTART:20250212T155505Z
+DTEND:20250212T185505Z
+ATTENDEE:MAILTO:yasmine.hsairi@etudiant-isi.utm.tn
+CREATED:20250212T084453Z
+DESCRIPTION:Internal meeting for discussion for new pricing for product and
+  services.
+DTSTAMP:20250212T084453Z
+ORGANIZER;CN="YourCompany, Mitchell Admin":MAILTO:yasmine.hsairi@etudiant-i
+ si.utm.tn
+SUMMARY:Pricing Discussion
+END:VEVENT
+END:VCALENDAR
