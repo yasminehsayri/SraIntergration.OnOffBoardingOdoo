@@ -1,0 +1,92 @@
+2025-02-17 08:25:17.418 GMT [8188] LOG:  database system was shut down at 2025-02-17 08:24:43 GMT
+2025-02-17 08:25:17.451 GMT [7324] LOG:  database system is ready to accept connections
+2025-02-17 08:36:52.806 GMT [13952] ERROR:  could not serialize access due to concurrent update
+2025-02-17 08:36:52.806 GMT [13952] STATEMENT:  
+	            SELECT *, cron_name->>'en_US' as cron_name
+	            FROM ir_cron
+	            WHERE active = true
+	              AND numbercall != 0
+	              AND (nextcall <= (now() at time zone 'UTC')
+	                OR EXISTS (
+	                    SELECT cron_id
+	                    FROM ir_cron_trigger
+	                    WHERE call_at <= (now() at time zone 'UTC')
+	                      AND cron_id = ir_cron.id
+	                )
+	              )
+	              AND id in (1)
+	            ORDER BY priority
+	            LIMIT 1 FOR NO KEY UPDATE SKIP LOCKED
+	        
+2025-02-17 10:22:03.006 GMT [19872] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-02-17 10:22:03.007 GMT [21068] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-02-17 13:32:02.045 GMT [23556] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-02-17 14:21:01.233 GMT [12248] ERROR:  null value in column "model_id" violates not-null constraint
+2025-02-17 14:21:01.233 GMT [12248] DETAIL:  Failing row contains (647, null, null, 1, 1, access.hr.applicant.age, t, t, t, t, t, 2025-02-17 14:21:00.702997, 2025-02-17 14:21:00.702997).
+2025-02-17 14:21:01.233 GMT [12248] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-02-17 14:21:00.702997', 1, NULL, 'access.hr.applicant.age', true, true, true, true, '2025-02-17 14:21:00.702997', 1) RETURNING "id"
+2025-02-17 14:21:01.236 GMT [12248] ERROR:  null value in column "model_id" violates not-null constraint
+2025-02-17 14:21:01.236 GMT [12248] DETAIL:  Failing row contains (648, null, null, 1, 1, access.hr.applicant.age, t, t, t, t, t, 2025-02-17 14:21:00.702997, 2025-02-17 14:21:00.702997).
+2025-02-17 14:21:01.236 GMT [12248] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-02-17 14:21:00.702997', 1, NULL, 'access.hr.applicant.age', true, true, true, true, '2025-02-17 14:21:00.702997', 1) RETURNING "id"
+2025-02-17 14:24:58.586 GMT [28088] ERROR:  null value in column "model_id" violates not-null constraint
+2025-02-17 14:24:58.586 GMT [28088] DETAIL:  Failing row contains (649, null, 1, 1, 1, access.hr.applicant.age, t, t, t, t, t, 2025-02-17 14:24:58.133732, 2025-02-17 14:24:58.133732).
+2025-02-17 14:24:58.586 GMT [28088] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-02-17 14:24:58.133732', 1, 1, 'access.hr.applicant.age', true, true, true, true, '2025-02-17 14:24:58.133732', 1) RETURNING "id"
+2025-02-17 14:24:58.588 GMT [28088] ERROR:  null value in column "model_id" violates not-null constraint
+2025-02-17 14:24:58.588 GMT [28088] DETAIL:  Failing row contains (650, null, 1, 1, 1, access.hr.applicant.age, t, t, t, t, t, 2025-02-17 14:24:58.133732, 2025-02-17 14:24:58.133732).
+2025-02-17 14:24:58.588 GMT [28088] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-02-17 14:24:58.133732', 1, 1, 'access.hr.applicant.age', true, true, true, true, '2025-02-17 14:24:58.133732', 1) RETURNING "id"
+2025-02-17 14:28:03.118 GMT [15344] ERROR:  null value in column "model_id" violates not-null constraint
+2025-02-17 14:28:03.118 GMT [15344] DETAIL:  Failing row contains (651, null, 1, 1, 1, access.hr.applicant.age, t, t, t, t, t, 2025-02-17 14:28:02.555935, 2025-02-17 14:28:02.555935).
+2025-02-17 14:28:03.118 GMT [15344] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-02-17 14:28:02.555935', 1, 1, 'access.hr.applicant.age', true, true, true, true, '2025-02-17 14:28:02.555935', 1) RETURNING "id"
+2025-02-17 14:28:03.122 GMT [15344] ERROR:  null value in column "model_id" violates not-null constraint
+2025-02-17 14:28:03.122 GMT [15344] DETAIL:  Failing row contains (652, null, 1, 1, 1, access.hr.applicant.age, t, t, t, t, t, 2025-02-17 14:28:02.555935, 2025-02-17 14:28:02.555935).
+2025-02-17 14:28:03.122 GMT [15344] STATEMENT:  INSERT INTO "ir_model_access" ("active", "create_date", "create_uid", "group_id", "name", "perm_create", "perm_read", "perm_unlink", "perm_write", "write_date", "write_uid") VALUES (true, '2025-02-17 14:28:02.555935', 1, 1, 'access.hr.applicant.age', true, true, true, true, '2025-02-17 14:28:02.555935', 1) RETURNING "id"
+2025-02-17 14:37:57.732 GMT [26880] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-02-17 14:37:57.732 GMT [22848] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-02-17 14:37:57.734 GMT [25548] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-02-17 14:37:57.734 GMT [17096] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-02-17 14:37:57.734 GMT [26692] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-02-17 14:37:57.734 GMT [14212] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-02-17 14:37:57.735 GMT [11404] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-02-17 15:17:02.727 GMT [23476] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-02-18 09:14:22.896 GMT [23288] ERROR:  could not serialize access due to concurrent update
+2025-02-18 09:14:22.896 GMT [23288] STATEMENT:  DELETE FROM ir_attachment WHERE id IN (
+	            SELECT id FROM ir_attachment WHERE id in (998) FOR NO KEY UPDATE SKIP LOCKED
+	        )
+2025-02-18 09:27:37.338 GMT [23288] ERROR:  could not serialize access due to concurrent update
+2025-02-18 09:27:37.338 GMT [23288] STATEMENT:  DELETE FROM ir_attachment WHERE id IN (
+	            SELECT id FROM ir_attachment WHERE id in (993, 855) FOR NO KEY UPDATE SKIP LOCKED
+	        )
+2025-02-18 09:51:45.310 GMT [29296] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-02-18 09:51:45.311 GMT [27052] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-02-18 09:51:45.311 GMT [11524] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-02-18 15:15:05.413 GMT [864] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-02-18 15:15:05.413 GMT [8056] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-02-18 15:15:09.437 GMT [26300] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-02-18 15:15:09.437 GMT [11480] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-02-18 15:15:09.438 GMT [24968] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-02-18 15:15:09.438 GMT [18096] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-02-18 15:15:09.438 GMT [1320] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-02-18 15:15:09.439 GMT [11216] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2025-02-18 15:15:09.439 GMT [12860] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	

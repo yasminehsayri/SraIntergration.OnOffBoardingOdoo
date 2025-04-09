@@ -1,0 +1,11 @@
+2025-03-17 21:33:09.471 GMT [8100] LOG:  database system was shut down at 2025-03-17 21:32:27 GMT
+2025-03-17 21:33:09.499 GMT [7268] LOG:  database system is ready to accept connections
+2025-03-18 08:32:05.289 GMT [15180] ERROR:  operator does not exist: character varying ->> unknown at character 75
+2025-03-18 08:32:05.289 GMT [15180] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2025-03-18 08:32:05.289 GMT [15180] STATEMENT:  SELECT "hr_contract_type"."id" AS "id", COALESCE("hr_contract_type"."name"->>'fr_FR', "hr_contract_type"."name"->>'en_US') AS "name", "hr_contract_type"."sequence" AS "sequence", "hr_contract_type"."create_uid" AS "create_uid", "hr_contract_type"."create_date" AS "create_date", "hr_contract_type"."write_uid" AS "write_uid", "hr_contract_type"."write_date" AS "write_date" FROM "hr_contract_type" WHERE "hr_contract_type".id IN (2, 3, 4, 5, 6, 1)
+2025-03-18 08:32:10.453 GMT [15180] ERROR:  operator does not exist: character varying ->> unknown at character 75
+2025-03-18 08:32:10.453 GMT [15180] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2025-03-18 08:32:10.453 GMT [15180] STATEMENT:  SELECT "hr_contract_type"."id" AS "id", COALESCE("hr_contract_type"."name"->>'fr_FR', "hr_contract_type"."name"->>'en_US') AS "name", "hr_contract_type"."sequence" AS "sequence", "hr_contract_type"."create_uid" AS "create_uid", "hr_contract_type"."create_date" AS "create_date", "hr_contract_type"."write_uid" AS "write_uid", "hr_contract_type"."write_date" AS "write_date" FROM "hr_contract_type" WHERE "hr_contract_type".id IN (2, 3, 4, 5, 6, 1)
+2025-03-18 08:37:27.734 GMT [15180] ERROR:  operator does not exist: character varying ->> unknown at character 120
+2025-03-18 08:37:27.734 GMT [15180] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2025-03-18 08:37:27.734 GMT [15180] STATEMENT:  SELECT "hr_contract_type"."id" AS "id", "hr_contract_type"."sequence" AS "sequence", COALESCE("hr_contract_type"."name"->>'fr_FR', "hr_contract_type"."name"->>'en_US') AS "name" FROM "hr_contract_type" WHERE "hr_contract_type".id IN (2, 3, 4, 5, 6, 1)

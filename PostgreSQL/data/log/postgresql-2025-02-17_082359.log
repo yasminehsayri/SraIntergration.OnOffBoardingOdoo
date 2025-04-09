@@ -1,0 +1,8 @@
+2025-02-17 08:23:59.892 GMT [8212] LOG:  database system was shut down at 2025-02-17 08:23:22 GMT
+2025-02-17 08:23:59.913 GMT [7940] LOG:  database system is ready to accept connections
+2025-02-17 08:24:43.589 GMT [7940] LOG:  received fast shutdown request
+2025-02-17 08:24:43.592 GMT [7940] LOG:  aborting any active transactions
+2025-02-17 08:24:43.595 GMT [8328] ERROR:  canceling statement due to user request
+2025-02-17 08:24:43.598 GMT [7940] LOG:  background worker "logical replication launcher" (PID 8328) exited with exit code 1
+2025-02-17 08:24:43.603 GMT [8252] LOG:  shutting down
+2025-02-17 08:24:43.660 GMT [7940] LOG:  database system is shut down
